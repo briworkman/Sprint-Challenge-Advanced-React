@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import PlayerStats from "./components/PlayerStats";
 import axios from "axios";
 
 class App extends React.Component {
   state = {
-    data: []
+    players: []
   };
 
   componentDidMount() {
@@ -13,7 +14,7 @@ class App extends React.Component {
       .then(response => {
         console.log(response);
         this.setState({
-          data: response.data
+          players: response.data
         });
       })
       .catch(err => {
@@ -23,7 +24,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Sprint Practice</h1>
+        {this.state.players.map(player => (
+          <PlayerStats
+            name={player.name}
+            country={player.country}
+            searches={player.searches}
+            id={player.id}
+            key={player.id}
+          />
+        ))}
       </div>
     );
   }
