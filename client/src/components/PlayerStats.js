@@ -3,13 +3,9 @@ import React from "react";
 function PlayerStats(props) {
   return (
     <div>
-      <h1>
-        Name:{props.name}
-        <br />
-        Country: {props.country}
-        <br />
-        Searches: {props.searches}
-      </h1>
+      <h3>Name: {props.name}</h3>
+      <p>Country: {props.country}</p>
+      <p>Searches: {props.searches}</p>
     </div>
   );
 }
