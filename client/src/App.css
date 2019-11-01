@@ -14,13 +14,11 @@
   justify-content: space-between;
   padding: 0 3%;
   width: 100%;
-  -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
-  -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
   box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
 }
 
 .dark-mode__toggle {
-  background: papayawhip;
+  background: #f11c1c6e;
   border-radius: 50px;
   border: 1px solid black;
   height: 20px;
@@ -29,7 +27,7 @@
 }
 
 .toggle {
-  background: #f68819;
+  background: #f11c1c;
   border-radius: 50px;
   height: 18px;
   left: 0;
@@ -43,6 +41,34 @@
 }
 
 .dark-mode {
-  color: lightseagreen;
-  background-color: #313843;
+  color: white;
+  background-color: black;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.player-card {
+  background-color: lightgrey;
+  border: 1px solid #443e3e;
+  box-shadow: 0px 5px 10px rgb(71, 71, 71);
+  width: 205px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.player-name {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  color: black;
+  text-align: center;
 }
