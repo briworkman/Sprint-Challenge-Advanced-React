@@ -12,6 +12,7 @@
     "nodemon": "^1.17.2"
   },
   "scripts": {
+    "build": "react-scripts build",
     "start": "nodemon server.js"
   },
   "author": "Lambda School",
